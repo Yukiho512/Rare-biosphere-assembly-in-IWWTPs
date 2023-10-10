@@ -1,3 +1,4 @@
+#读入物种丰度表，行为OTU名，列为样品名称
 otu <- read.table("Bacteria.txt",header=T,row.names=1)
 otu <- data.frame(otu)
 otu <- cbind(otu, rowSums(otu))
